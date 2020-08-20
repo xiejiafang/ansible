@@ -1,0 +1,13 @@
+---
+- name: test task failure
+  hosts: node1
+  tasks:
+    - name: get the date from node1
+      command: date
+      register: date_result
+      changed_when: false
+    
+    - name: print date
+      debug:
+        var:  date_result
+...

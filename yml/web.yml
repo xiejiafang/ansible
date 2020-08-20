@@ -1,0 +1,20 @@
+---
+- name: play to install web service
+  hosts: localhost
+  tasks: 
+    - name: latest httpd version installed 
+      yum: 
+        name: httpd
+        state: present
+
+    - name: correct index.html is present
+      copy: 
+        content: "This is a test page!"
+        dest: /var/www/html/index.html
+
+    - name: httpd is started
+      service: 
+        name: httpd
+        state: started
+        enabled: true
+...

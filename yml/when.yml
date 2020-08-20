@@ -1,0 +1,19 @@
+---
+- name: restart httpd if postfix is running 
+  hosts: node1
+  tasks:
+    - name: Get Postfix server status
+      command: /usr/bin/systemctl is-active postfix
+      ignore_errors: yes
+      register: result
+
+    - name: restart httpd based on postfix status
+      service: 
+        name: httpd
+        state: restarted
+      when: result.rc == 0
+
+    - name: debug
+      debug:
+        var: result
+...

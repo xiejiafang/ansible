@@ -1,0 +1,13 @@
+---
+- name: remove package
+  hosts: all
+  serial: 5
+  tasks:
+    - name: begin to install
+      yum:
+        name: "{{ item }}"
+        state: absent
+      loop:
+        - vsftpd
+
+...

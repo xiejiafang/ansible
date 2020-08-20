@@ -1,0 +1,14 @@
+---
+- name: test task failure
+  hosts: node1
+  tasks:
+    - name: run the user's script
+      shell: /usr/local/bin/user.sh
+      register: shell_result
+      ignore_errors: yes
+    
+    - name: report a failure
+      fail:
+        msg: "{{ shell_result.stderr }}"
+      when: shell_result.rc == 128
+...

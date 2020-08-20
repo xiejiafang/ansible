@@ -1,0 +1,6 @@
+---
+  - name: Install the {{ package }} package
+    yum:
+      name: "{{ package }}"
+      state: "{{ package_state }}"
+...

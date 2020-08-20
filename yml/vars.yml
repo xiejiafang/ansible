@@ -1,0 +1,14 @@
+---
+- name: test vars
+  hosts: localhost
+  vars:
+    package:
+      - httpd
+      - lrzsz
+  tasks:
+    - name: install
+      yum:
+        name: "{{ package }}"
+        state: present
+
+...

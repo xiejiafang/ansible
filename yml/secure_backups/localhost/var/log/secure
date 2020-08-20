@@ -1,0 +1,14 @@
+Aug 17 09:59:15 localhost sshd[95684]: pam_unix(sshd:session): session closed for user root
+Aug 17 10:43:04 localhost sshd[95680]: pam_unix(sshd:session): session closed for user root
+Aug 17 10:52:17 localhost sshd[96848]: pam_unix(sshd:session): session closed for user root
+Aug 17 10:52:33 localhost sshd[96844]: pam_unix(sshd:session): session closed for user root
+Aug 17 14:02:52 localhost sshd[107334]: pam_unix(sshd:session): session closed for user root
+Aug 17 15:15:54 localhost sshd[107330]: pam_unix(sshd:session): session closed for user root
+Aug 17 15:28:21 localhost sshd[111191]: Address 192.168.30.141 maps to localhost, but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!
+Aug 17 15:28:21 localhost sshd[111191]: Accepted password for root from 192.168.30.141 port 61907 ssh2
+Aug 17 15:28:21 localhost sshd[111195]: Address 192.168.30.141 maps to localhost, but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!
+Aug 17 15:28:21 localhost sshd[111195]: Accepted password for root from 192.168.30.141 port 61908 ssh2
+Aug 17 15:28:21 localhost sshd[111191]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 17 15:28:21 localhost sshd[111195]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 17 17:15:51 localhost polkitd[771]: Registered Authentication Agent for unix-process:114587:24688052 (system bus name :1.1627 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Aug 17 17:16:05 localhost polkitd[771]: Unregistered Authentication Agent for unix-process:114587:24688052 (system bus name :1.1627, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)

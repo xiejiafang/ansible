@@ -1,0 +1,8 @@
+---
+  - name: Faxt dump
+    hosts: node1
+    tasks: 
+      - name: Print node1 facts
+        debug:
+          var: ansible_facts['devices']
+...

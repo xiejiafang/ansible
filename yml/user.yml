@@ -1,0 +1,15 @@
+---
+- name: test loop
+  hosts: node1
+  tasks:
+    - name: users exist and in the correct groups
+      user: 
+        name: "{{ item.name}}"
+        groups: "{{ item.groups }}"
+        state: absent
+      loop:
+        - name: xjf
+          groups: xjf
+        - name: jfx
+          groups: root
+...

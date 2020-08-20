@@ -1,0 +1,21 @@
+---
+- name: 安装bash-completion
+  hosts: all
+  serial: 1
+  tasks:
+    - name: begin to install
+      yum:
+        name: "{{ item }}"
+        state: latest
+      loop:
+        - bash-completion
+        - vsftpd
+    - name: set enable 
+      service:
+        name: "{{ item }}"
+        enabled: yes
+      loop:
+        - sshd
+        - vsftpd
+
+...

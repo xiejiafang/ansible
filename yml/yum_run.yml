@@ -1,0 +1,10 @@
+---
+- name: yum starter
+  hosts: all
+  vars:
+    package: tree
+    package_state: latest
+  tasks:
+    - name: Import task file and set variables
+      import_tasks: yum_install.yml
+...
