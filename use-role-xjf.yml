@@ -1,0 +1,6 @@
+---
+- name: use roles
+  hosts: all
+  roles:
+    - role_xjf
+...
