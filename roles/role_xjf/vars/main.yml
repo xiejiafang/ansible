@@ -1,2 +1,3 @@
 ---
 # vars file for role_xjf
+system_owner: This is roles vars in role_name/vars

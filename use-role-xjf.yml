@@ -2,5 +2,6 @@
 - name: use roles
   hosts: all
   roles:
-    - role_xjf
+    - role: role_xjf
+      system_owner: This is after roles keyword!
 ...
