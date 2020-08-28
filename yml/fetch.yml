@@ -7,4 +7,5 @@
         src: /var/log/secure
         dest: secure_backups
         flat: no
+
 ...
