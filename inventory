@@ -9,6 +9,7 @@
 	node7
 	node8
 	node9
+	node10
 [web:children]
 	dev
 	test
