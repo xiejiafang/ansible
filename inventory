@@ -12,5 +12,3 @@
 	node10
 [web:children]
 	dev
-	test
-[xjf]
