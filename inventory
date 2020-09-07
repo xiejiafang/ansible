@@ -11,4 +11,3 @@
 	node9
 [web:children]
 	dev
-	test
