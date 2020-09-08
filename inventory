@@ -13,4 +13,3 @@
 [web:children]
 	dev
 	test
-	node1
